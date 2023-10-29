@@ -1,0 +1,144 @@
+header {
+    background-color: #f0efe9;
+    padding: 16px;
+    align-items: center;
+  
+    .container {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      grid-template-areas: "logotype bars";
+      align-items: center;
+  
+      @media (min-width: 992px) {
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+          "logotype cib social"
+          "logotype menu menu";
+      }
+  
+      .btn-menubars {
+        grid-area: bars;
+        border: none;
+        font-size: 25px;
+        background-color: transparent;
+        @media (min-width: 992px) {
+          display: none;
+        }
+      }
+      .logotype {
+        grid-area: logotype;
+        margin-right: 70px;
+      }
+      .contact-information-bar {
+        grid-area: cib;
+        display: none;
+  
+        justify-content: flex-start;
+        align-content: center;
+  
+        @media (min-width: 992px) {
+          display: flex;
+        }
+  
+        .content-box {
+          padding-right: 20px;
+          margin-right: 30px;
+          border-right: 1px solid #666666;
+  
+          font-family: "Inter", sans-serif;
+  
+          // 300 font-weight is 'light'
+          font-weight: 300;
+          font-size: 15px;
+  
+          // the settings for i-tag, concerning icons.
+          i {
+            // Moves the text sligtly to the right.
+            margin-right: 5px;
+  
+            // em is depended on the font of the parent (content-box). Since we wanted the icons
+            //larger, we went with 1.2em
+            font-size: 1.2em;
+            color: #666666;
+          }
+  
+          // Only affects the last one, the adress, since we dont want the border on it's right side
+          &.last {
+            border: none;
+          }
+        }
+      }
+      .socialmedia {
+        grid-area: social;
+        display: none;
+  
+        @media (min-width: 992px) {
+          display: block;
+        }
+  
+        a {
+          color: #191919;
+          font-size: 1.2rem;
+          margin-left: 10px;
+  
+          &:hover {
+            color: #b9b6b6;
+          }
+        }
+      }
+      .menu {
+        display: none;
+        grid-area: menu;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #dad9d3;
+        margin-top: 10px;
+        padding-top: 10px;
+  
+        @media (min-width: 992px) {
+          display: flex;
+        }
+  
+        nav {
+          // a == links. here we controll how they act and look
+          a {
+            display: inline-block;
+            color: #191919;
+            text-decoration: none;
+            margin-right: 30px;
+  
+            // this part we have not gone through yet.
+            position: relative;
+  
+            // what happens when the link is active
+            &.active {
+              font-weight: 500;
+            }
+  
+            // regulates what happens after it's been activate, and when we hover the link
+            // content, position and transform, we havent gone through yet.
+            &.active::after,
+            &:hover::after {
+              content: "";
+              font-weight: 500;
+              position: absolute;
+  
+              height: 2px;
+              width: 15px;
+  
+              background-color: #191919;
+              left: 50%;
+              bottom: -3px;
+  
+              transform: translate((calc(50% - 15px)));
+            }
+          }
+  
+          .btn-login {
+            padding-top: 12px;
+            padding-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
