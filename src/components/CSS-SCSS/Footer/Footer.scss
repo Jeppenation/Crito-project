@@ -1,0 +1,149 @@
+footer {
+    background-color: #0e1021;
+    position: relative;
+  
+    #vector4 {
+      position: absolute;
+  
+      bottom: 40px;
+      right: 0;
+  
+      color: #666666;
+      z-index: 0;
+    }
+  
+    .container {
+      .footer-sections {
+        color: #fff;
+        text-decoration: none;
+  
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+  
+        gap: 10px;
+  
+        padding-top: 80px;
+        padding-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+  
+        @media (min-width: 1180px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-areas: "logo company helpl resources link";
+  
+          padding-top: 130px;
+          padding-bottom: 100px;
+        }
+  
+        .logo-text {
+          grid-area: logo;
+          flex: 0.2;
+        }
+        .company-links {
+          grid-area: company;
+  
+          @media (min-width: 991px) {
+            
+          }
+  
+          @media (min-width: 1180px) {
+            
+          }
+        }
+        .help-links {
+          grid-area: helpl;
+          h3 {
+            margin-left: 10px;
+          }
+        }
+        .resources {
+          grid-area: resources;
+        }
+        .link {
+          grid-area: link;
+        }
+  
+        .footer-section {
+          display: flex;
+          flex-direction: column;
+  
+          img {
+            margin-top: 30px;
+            margin-bottom: 20px;
+          }
+  
+          h3 {
+            font-size: 15px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+  
+            @media (min-width: 1180px) {
+              font-size: 22px;
+            }
+          }
+  
+          a {
+            color: #ffffffbe;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+          }
+  
+          a:hover{
+            color: #ffffff7c;
+          }
+  
+          p {
+            font-size: 10px;
+  
+            @media (min-width: 1180px) {
+              font-size: 16px;
+            }
+          }
+        }
+  
+        .logo-text {
+          p {
+            color: #ffffffbe;
+          }
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff2b;
+    }
+  
+    
+  
+    .container {
+  
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  
+     
+  
+      z-index: 1;
+      p {
+        color: #ffffffbe;
+      }
+      .socialmedia {
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 20px;
+          margin-left: 5px;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: #707070;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,87 @@
+.btn-theme {
+  background-color: #f9d783;
+  border: 1px solid #f9d783;
+  color: #191919;
+  text-decoration: none;
+  margin-top: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.btn-theme:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f0efe9;
+}
+.btn-theme i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.browse-btn {
+  color: #191919;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #191919;
+  z-index: 1;
+  border-radius: 60px;
+  padding: 20px 50px 20px;
+  background-color: #f0efe9;
+  margin-top: 50px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+.browse-btn i {
+  margin-left: 15px;
+}
+.browse-btn:hover {
+  background-color: #191919;
+  color: #f0efe9;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.btn-black:hover {
+  background-color: #fff;
+  border: 1px solid #191919;
+  color: #191919;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  margin-top: 50px;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #f0efe9;
+}
+.btn-transparent i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}

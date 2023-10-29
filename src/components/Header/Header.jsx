@@ -2,6 +2,8 @@ import React from 'react'
 import {NavLink, Link} from 'react-router-dom';
 import logotype from '@images/Logo.svg'
 import '../CSS-SCSS/Header/Header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Header = () => {
   return (

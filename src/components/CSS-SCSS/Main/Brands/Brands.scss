@@ -1,0 +1,33 @@
+.brands {
+    //container adds some padding to the left and to the right.
+    .container {
+      // since it's just pictures on a line, we went with Flex
+      display: flex;
+      justify-content: center;
+
+      //controlls how the flex will behave when it runs out of space on the horizontal plane
+      flex-wrap: wrap;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      @media (min-width: 768px) {
+        //here we went with space-around, since it looked best that way
+        justify-content: space-around;
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .logo {
+        padding: 10px;
+
+        img {
+          //made the image responsive and added some margin to the bottom and to the left, so that they will get some breathing room
+          //on a smaller screen.
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 15px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }

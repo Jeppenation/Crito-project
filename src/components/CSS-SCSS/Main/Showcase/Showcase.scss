@@ -1,0 +1,89 @@
+.showcase {
+    background-color: #f0efe9;
+
+    position: relative;
+
+    #vector5 {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      z-index: 0;
+    }
+
+    // since we have content, and img under content, this acts as a parent class for them.
+    .container {
+      // we wanted the content to the left, and the img to the right. So we made it a flexbox
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // governs the content, or the text
+      .content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+
+        z-index: 0;
+
+        @media (min-width: 1200px) {
+          text-align: left;
+        }
+        // the "title", we choose h1 since it's the largest one and considerd to be
+        // the main title. although we changed how it looked here.
+        // this is manily a practical use for us.
+        h1 {
+          font-family: "DM Sans", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+
+          @media (min-width: 768px) {
+            font-size: 70px;
+          }
+
+          @media (min-width: 1400px) {
+            font-size: 86px;
+          }
+        }
+
+        // changes the style of the paragraph in this content
+        // we choose p, since it's maninly used as a paragraph.
+        // although we changed the looks with this code.
+        p {
+          font-size: 16px;
+          padding-top: 40px;
+          padding-bottom: 35px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          @media (min-width: 768px) {
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+
+        // since we have two buttons,  we added an a tag here as well.
+        a {
+          // created some space between the two buttons
+          margin-right: 0px;
+          display: block;
+          margin-bottom: 20px;
+
+          @media (min-width: 768px) {
+            display: inline-block;
+          }
+        }
+      }
+
+      img {
+        display: none;
+        margin-right: -50px;
+
+        @media (min-width: 1200px) {
+          display: block;
+        }
+      }
+    }
+  }

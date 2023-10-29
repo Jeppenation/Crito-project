@@ -1,0 +1,128 @@
+.btn-theme {
+    background-color: #f9d783;
+    border: 1px solid #f9d783;
+    color: #191919;
+    text-decoration: none;
+  
+    margin-top: 50px;
+  
+    // creates more room for the text, and a larger button
+    padding: 12px 30px;
+  
+    // 600 in font-weight is semi-bold
+    font-weight: 600;
+  
+    // border-radius creates a more rounder form of a button
+    border-radius: 25px;
+  
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+  
+    // settings for when we hover over the button
+    &:hover {
+      background-color: #191919;
+      border: 1px solid #191919;
+      color: #f0efe9;
+    }
+  
+    // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+    i {
+      margin-left: 8px;
+      font-size: 0.9em;
+    }
+  }
+  
+  // Below is the styling for the button below the boxes
+  .browse-btn {
+    color: #191919;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #191919;
+  
+    z-index: 1;
+  
+    // to make the border more rounder
+    border-radius: 60px;
+    padding: 20px 50px 20px;
+    background-color: #f0efe9;
+  
+    margin-top: 50px;
+  
+    // adds some transition styling ot it, it looked best (imo) with 0.1s
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+  
+    // semi-bold
+    font-weight: 600;
+  
+    // moves the arrow on the button slightly to the right
+    i {
+      margin-left: 15px;
+    }
+  
+    &:hover {
+      background-color: #191919;
+      color: #f0efe9;
+    }
+  }
+  
+  .btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #fff;
+    text-decoration: none;
+  
+    margin-top: 50px;
+  
+    // creates more room for the text, and a larger button
+    padding: 12px 30px;
+  
+    // 600 in font-weight is semi-bold
+    font-weight: 600;
+  
+    // border-radius creates a more rounder form of a button
+    border-radius: 25px;
+  
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+  
+    // settings for when we hover over the button
+    &:hover {
+      background-color: #fff;
+      border: 1px solid #191919;
+      color: #191919;
+    }
+  
+    // settings for the icon, we moved it slightly to the left, and changed the size depending on 16px.
+    i {
+      margin-left: 8px;
+      font-size: 0.9em;
+    }
+  }
+  
+  .btn-transparent {
+    background-color: transparent;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 25px;
+  
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+  
+    margin-top: 50px;
+  
+    &:hover {
+      background-color: #191919;
+      border: 1px solid #191919;
+      color: #f0efe9;
+    }
+  
+    i {
+      margin-left: 8px;
+      font-size: 0.9em;
+    }
+  }
+  
