@@ -1,0 +1,85 @@
+.about-company .container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.about-company .container .img-box {
+  height: 450px;
+}
+@media (min-width: 430px) {
+  .about-company .container .img-box {
+    height: 100%;
+  }
+}
+.about-company .container .img-box img {
+  width: 100%;
+  height: auto;
+}
+.about-company .container .img-box .overlay-box {
+  height: 180px;
+  width: 370px;
+  background-color: #beebff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  position: relative;
+  bottom: 215px;
+}
+@media (min-width: 720px) {
+  .about-company .container .img-box .overlay-box {
+    right: 60px;
+  }
+}
+.about-company .container .img-box .overlay-box .name {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.about-company .container .img-box .overlay-box .position {
+  color: #f94d1c;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.about-company .container .img-box .overlay-box p {
+  margin-top: 25px;
+  font-style: italic;
+}
+.about-company .container .about-company-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1100px) {
+  .about-company .container .about-company-text {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-company .container .about-company-text {
+    margin-left: 250px;
+  }
+}
+.about-company .container .about-company-text .section-title {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.about-company .container .about-company-text .section-title p {
+  font-size: 18px;
+}
+.about-company .container .about-company-text .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 720px) {
+  .about-company .container .about-company-text .section-title h2 {
+    font-size: 45px;
+  }
+}
+.about-company .container .about-company-text p {
+  margin-top: 30px;
+  line-height: 2;
+}

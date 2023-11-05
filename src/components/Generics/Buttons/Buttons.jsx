@@ -14,6 +14,9 @@ const Buttons = ({ url, type, title }) => {
       case "browse":
         return "browse-btn";
 
+      case 'play':
+        return 'btn-play'
+
       default:
         return "btn-transparent";
     }

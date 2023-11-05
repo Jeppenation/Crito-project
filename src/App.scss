@@ -1,0 +1,36 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-title {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  
+    @media (min-width: 768px) {
+      padding-top: 120px;
+      padding-bottom: 90px;
+    }
+  
+    p {
+      color: #f94d1c;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+  
+      margin: 10px;
+    }
+  
+    h2 {
+      color: #191919;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 700;
+      font-size: 45px;
+    }
+  }
+
+  .ac-buttons {
+    display: inline-block;
+    margin-top: 75px;
+  }

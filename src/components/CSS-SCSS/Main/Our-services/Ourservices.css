@@ -1,0 +1,105 @@
+.our-services {
+  background-color: #f0efe9;
+  position: relative;
+}
+.our-services #vector1 {
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+}
+.our-services #vector2 {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+.our-services .container {
+  padding: 0;
+  background-color: #f0efe9;
+  padding-bottom: 60px;
+  z-index: 0;
+}
+.our-services .container .section-title {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.our-services .container .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1200px) {
+  .our-services .container .section-title {
+    text-align: left;
+    padding-right: 800px;
+    margin: 0px;
+  }
+  .our-services .container .section-title h2 {
+    font-size: 45px;
+  }
+}
+.our-services .container .os-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+@media (min-width: 720px) {
+  .our-services .container .os-boxes {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+.our-services .container .os-boxes .os-box {
+  border: 1px solid black;
+  padding: 40px;
+  text-decoration: none;
+  color: #191919;
+  padding: 20px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  position: relative;
+  flex: 1;
+  transition: boarder 0.3s ease;
+}
+@media (min-width: 720px) {
+  .our-services .container .os-boxes .os-box {
+    margin: 0px;
+  }
+}
+.our-services .container .os-boxes .os-box .arrow-btn {
+  display: flex;
+  justify-content: end;
+}
+.our-services .container .os-boxes .os-box .arrow-btn i {
+  margin-right: 0px;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #191919;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+.our-services .container .os-boxes .os-box h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 85px;
+}
+.our-services .container .os-boxes .os-box::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  width: 10%;
+  height: 2px;
+  background-color: #191919;
+}
+.our-services .container .os-boxes .os-box:hover {
+  background-color: #f9d783;
+}
+.our-services .container .os-boxes .os-box:hover .arrow-btn i {
+  background-color: #fff;
+  color: #191919;
+}

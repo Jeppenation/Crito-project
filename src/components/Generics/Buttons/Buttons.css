@@ -85,3 +85,19 @@
   margin-left: 8px;
   font-size: 0.9em;
 }
+
+.btn-play {
+  margin-left: 40px;
+  padding: 10px 14px;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  border: 1px solid #191919;
+  border-radius: 50%;
+}
+.btn-play i {
+  color: #191919;
+}
+.btn-play:hover {
+  background-color: #191919;
+  color: #fff;
+}

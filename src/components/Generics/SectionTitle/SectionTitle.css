@@ -1,12 +1,7 @@
-.center-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .section-title {
   padding-top: 70px;
   padding-bottom: 30px;
+  padding-left: 40px;
 }
 @media (min-width: 768px) {
   .section-title {
@@ -26,9 +21,4 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 45px;
-}
-
-.ac-buttons {
-  display: inline-block;
-  margin-top: 75px;
 }
