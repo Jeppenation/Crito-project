@@ -1,0 +1,96 @@
+.why-choose-us {
+  margin-top: 50px;
+  position: relative;
+}
+@media (min-width: 1180px) {
+  .why-choose-us .wcu-overlaybox {
+    display: block;
+    background-color: #f0efe9;
+    height: 425px;
+    width: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+@media (min-width: 1650px) {
+  .why-choose-us .wcu-overlaybox {
+    width: 1000px;
+  }
+}
+@media (min-width: 1180px) {
+  .why-choose-us .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 100px;
+  }
+}
+@media (min-width: 1180px) and (min-width: 1320px) {
+  .why-choose-us .container {
+    gap: 250px;
+  }
+}
+.why-choose-us .container .wcu-right {
+  flex: 1.2;
+}
+.why-choose-us .container .wcu-right .wcu-image img {
+  width: 100%;
+  height: auto;
+}
+.why-choose-us .container .wcu-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.why-choose-us .container .wcu-left .wcu-left-box {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(102, 25, 25, 0.0980392157);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.why-choose-us .container .wcu-left .wcu-left-box h3 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 25px;
+}
+@media (min-width: 720px) {
+  .why-choose-us .container .wcu-left .wcu-left-box h3 {
+    font-size: 22px;
+    padding-right: 20px;
+  }
+}
+.why-choose-us .container .wcu-left .wcu-left-box i {
+  color: #191919;
+  border: 1px solid #191919;
+  padding: 10px;
+  border-radius: 50%;
+}
+.why-choose-us .container .wcu-left .wcu-left-box p {
+  color: rgba(25, 25, 25, 0.6196078431);
+  font-size: 14px;
+}
+@media (min-width: 720px) {
+  .why-choose-us .container .wcu-left .wcu-left-box p {
+    font-size: 16px;
+  }
+}
+.why-choose-us .container .wcu-left .wcu-left-box-last {
+  border-bottom: none;
+}
+.why-choose-us .container .wcu-left .section-title {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.why-choose-us .container .wcu-left .section-title h2 {
+  font-size: 35px;
+}
+@media (min-width: 1180px) {
+  .why-choose-us .container .wcu-left .section-title {
+    padding-bottom: 90px;
+  }
+}

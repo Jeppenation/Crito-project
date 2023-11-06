@@ -3,6 +3,7 @@
   border: 1px solid #f9d783;
   color: #191919;
   text-decoration: none;
+  z-index: 1;
   margin-top: 50px;
   padding: 12px 30px;
   font-weight: 600;
@@ -90,14 +91,16 @@
   margin-left: 40px;
   padding: 10px 14px;
   transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
   border: 1px solid #191919;
   border-radius: 50%;
 }
 .btn-play i {
   color: #191919;
+  transition: color 0.3s ease;
 }
 .btn-play:hover {
   background-color: #191919;
+}
+.btn-play:hover i {
   color: #fff;
 }

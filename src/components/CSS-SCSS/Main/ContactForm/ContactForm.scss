@@ -1,0 +1,43 @@
+.message-form-class {
+    margin-top: 80px;
+    margin-bottom: 120px;
+
+    .container {
+      background-color: #f0efe9;
+      padding: 60px 30px;
+
+      h2 {
+        font-family: "Dm Sans", sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      form {
+        .form-input {
+          display: block;
+          width: 100%;
+          padding: 15px 30px;
+          color: #7f7f7f;
+
+          border: 1px solid #f0efe9;
+          border-radius: 25px;
+          outline: none;
+        }
+
+        .textarea {
+          resize: none;
+          height: 160px;
+        }
+
+        input:focus,
+        textarea:focus {
+          border: 1px solid #c2c1bca8;
+        }
+
+        .btn-theme {
+          text-align: center;
+        }
+      }
+    }
+  }

@@ -3,6 +3,8 @@ import '../../CSS-SCSS/Main/Our-services/Ourservices.css'
 import ServiceBox from './Servicebox';
 import SectionTitle from '../../Generics/SectionTitle/SectionTitle';
 import Buttons from '../../Generics/Buttons/Buttons';
+import Vector1 from '@images/Vectorvector1.png'
+import Vector2 from '@images/Vectorvector2.png'
 
 const Ourservices = () => {
 
@@ -36,8 +38,8 @@ const Ourservices = () => {
 
   return (
     <section className="our-services">
-        <img id="vector1" src="images/Vectorvector1.png" alt="vector graphic" />
-        <img id="vector2" src="images/Vectorvector2.png" alt="vector graphic" />
+        <img id="vector1" src={Vector1} alt="vector graphic" />
+        <img id="vector2" src={Vector2} alt="vector graphic" />
 
         <div className="container">
         <SectionTitle

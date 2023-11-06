@@ -1,0 +1,86 @@
+.project-and-case {
+    .container {
+      // section-title controlls and sets <p> to red and h2 to bold, amongst otherthings
+      // Since it's not center on everything, we changed it to be alligned center here
+      .section-title {
+        text-align: center;
+
+        h2 {
+          font-size: 35px;
+        }
+        @media (min-width: 720px) {
+          font-size: 45px;
+        } 
+      }
+
+      //
+      .project-and-cases {
+        display: grid;
+
+        //at a certain point, 720px in this case, we change the columns to 1 column
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        //since we wanted to make two columns, we used grid-template-columns: 1fr 1fr here
+        @media (min-width: 720px) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        //This grid controlls the text on each of the article.
+        .project {
+          display: grid;
+
+          //since we want the text to be one 1-2 rows, we specified it to be 1fr column
+          grid-template-columns: 1fr;
+
+          //we added this part so that the line beneath the articles are even.
+          grid-template-rows: auto 1fr auto;
+          color: #191919;
+          text-decoration: none;
+
+          //this alows the picture to change size, depending on the view-port
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          //we change font, font-weight and pixelsize
+          h3 {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            padding-top: 35px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #1919191a;
+          }
+
+          //readmore is the Read More button beneath the articles
+          .readmore {
+            padding: 15px;
+            display: block;
+            text-align: right;
+            color: #191919;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+
+            //the icon for the arrow to the side of "read more". we wanted it further right, so we added margin-left
+            i {
+              margin-left: 3px;
+            }
+          }
+
+          //When you hover over the picture, or read more button, you'll get an underline
+          &:hover .readmore {
+            text-decoration: underline;
+          }
+        }
+      }
+      //centers the content. used in this case for the title and sub-title
+      .center-content {
+        margin-top: 50px;
+        margin-bottom: 90px;
+      }
+    }
+  }

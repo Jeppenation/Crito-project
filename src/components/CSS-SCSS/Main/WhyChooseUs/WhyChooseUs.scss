@@ -1,0 +1,106 @@
+.why-choose-us {
+    margin-top: 50px;
+    position: relative;
+
+    .wcu-overlaybox {
+
+      @media (min-width: 1180px) {
+        display: block;
+        background-color: #f0efe9;
+        height: 425px;
+        width: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+
+      @media (min-width: 1650px) {
+        width: 1000px;
+      }
+    }
+
+    .container {
+      @media (min-width: 1180px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 100px;
+
+        @media (min-width: 1320px) {
+          gap: 250px;
+        }
+      }
+
+      .wcu-right {
+        flex: 1.2;
+
+        .wcu-image {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .wcu-left {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .wcu-left-box {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #66191919;
+          margin-bottom: 10px;
+          margin-top: 10px;
+
+          h3 {
+            color: #191919;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+
+            font-size: 15px;
+            padding-left: 25px;
+
+            @media (min-width: 720px) {
+              font-size: 22px;
+              padding-right: 20px;
+            }
+          }
+
+          i {
+            color: #191919;
+            border: 1px solid #191919;
+            padding: 10px;
+            border-radius: 50%;
+          }
+
+          p {
+            color: #1919199e;
+            font-size: 14px;
+
+            @media (min-width: 720px) {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .wcu-left-box-last {
+          border-bottom: none;
+        }
+
+        .section-title {
+          padding-bottom: 30px;
+          padding-top: 10px;
+          h2 {
+            font-size: 35px;
+          }
+
+          @media (min-width: 1180px) {
+            padding-bottom: 90px;
+          }
+        }
+      }
+    }
+  }

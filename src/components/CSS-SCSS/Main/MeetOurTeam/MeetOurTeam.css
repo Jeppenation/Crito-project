@@ -1,0 +1,145 @@
+.team {
+  background-color: #f9d783;
+}
+.team .container {
+  padding-bottom: 120px;
+  padding-left: 10px;
+}
+.team .container .section-title {
+  position: relative;
+  padding-top: 40px;
+}
+@media (min-width: 991px) {
+  .team .container .section-title {
+    padding-top: 70px;
+  }
+}
+.team .container .section-title h2 {
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  .team .container .section-title h2 {
+    padding-bottom: 0;
+    font-size: 45px;
+  }
+}
+.team .container .section-title .btn-transparent {
+  transition: background 0.3s ease;
+  transition: color 0.3s ease;
+}
+.team .container .section-title .btn-transparent:hover {
+  background-color: #fff;
+  color: #191919;
+}
+@media (min-width: 1200px) {
+  .team .container .section-title .btn-transparent {
+    right: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .team .container .section-title .btn-transparent {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+  }
+}
+.team .container .team-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+@media (min-width: 510px) {
+  .team .container .team-images {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.team .container .team-images .team-person {
+  display: block;
+}
+.team .container .team-images .team-person h3 {
+  padding-top: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+@media (min-width: 510px) {
+  .team .container .team-images .team-person h3 {
+    padding-top: 40px;
+  }
+}
+.team .container .team-images .team-person img {
+  width: 100%;
+  height: auto;
+  padding-right: 20px;
+}
+@media (min-width: 380px) {
+  .team .container .team-images .team-person img {
+    padding-right: 0px;
+  }
+}
+.team .container .team-images .team-person p {
+  border-bottom: 1px solid #191919;
+  font-size: 14px;
+}
+@media (min-width: 510px) {
+  .team .container .team-images .team-person p {
+    border-bottom: none;
+    font-size: 16px;
+  }
+}
+.team .container .what-our-client-say {
+  background-color: #fff;
+}
+.team .container .what-our-client-say .section-title {
+  text-align: center;
+  padding-bottom: 0px;
+}
+@media (min-width: 960px) {
+  .team .container .what-our-client-say .section-title {
+    padding-bottom: 30px;
+  }
+}
+.team .container .what-our-client-say .btn-black {
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+.team .container .what-our-client-say .testimonials {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .team .container .what-our-client-say .testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+}
+.team .container .what-our-client-say .testimonials .testimonial p {
+  font-size: 18px;
+}
+.team .container .what-our-client-say .testimonials .testimonial h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.team .container .what-our-client-say .testimonials .testimonial .position-company {
+  color: #f94d1c;
+}
+.team .container .what-our-client-say .testimonials .testimonial .review-stars {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.team .container .what-our-client-say .testimonials .testimonial .testimonial-footer {
+  display: flex;
+  gap: 20px;
+}
+.team .container .what-our-client-say .testimonials .testimonial .testimonial-footer h3 {
+  margin: 0px;
+  font-size: 22px;
+}

@@ -1,0 +1,29 @@
+Skapa komponent utav: 
+    Features - 'lådorna'
+    WCU  - vänstra sidan
+    ProjectCase - Gör samtliga till komponenter
+
+    Meet our Team:
+        Komponent utav bilderna
+        Komponent utav recensionerna
+        Komponent utav stjärnorna (?)
+
+    NewsArticle:
+        Hämta nyheterna via fetch?
+        Gör komponent
+    
+Contact:
+    ContactOptions:
+        Skapa komponent utav de tre boxarna
+ 
+
+
+Att göra framöver: 
+    Formuläret på Contact-sidan ska valideras med enklare former av validering, såsom att 
+    ett fält måste innehålla ett värde etc.
+    
+    Du måste använda dig av useState när det kommer till formuläret.
+    
+    Du ska kunna skicka iväg informationen från kontaktformuläret från Contact-sidan till 
+    ett webapi som du har adressen på här ovan. När du mottagit ett statusmeddelande 
+    av typen 200 OK. Så ska det skrivas ut på sidan att formuläret har skickats.

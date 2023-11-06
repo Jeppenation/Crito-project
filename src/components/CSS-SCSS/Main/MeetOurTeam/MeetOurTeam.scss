@@ -1,0 +1,156 @@
+.team {
+    background-color: #f9d783;
+    .container {
+      padding-bottom: 120px;
+      padding-left: 10px;
+
+      .section-title {
+        position: relative;
+
+        padding-top: 40px;
+
+        @media (min-width: 991px) {
+          padding-top: 70px;
+        }
+
+        h2 {
+          padding-bottom: 50px;
+          font-size: 30px;
+
+          @media (min-width: 992px) {
+            padding-bottom: 0;
+            font-size: 45px;
+          }
+        }
+
+        .btn-transparent {
+          transition: background 0.3s ease;
+          transition: color 0.3s ease;
+
+          &:hover {
+            background-color: #fff;
+            color: #191919;
+          }
+          @media (min-width: 1200px) {
+            right: 200px;
+          }
+
+          @media (min-width: 992px) {
+            position: absolute;
+            right: 100px;
+            bottom: 100px;
+          }
+        }
+      }
+
+      .team-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        @media (min-width: 510px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .team-person {
+          display: block;
+
+          h3 {
+            padding-top: 20px;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+
+            @media (min-width: 510px) {
+              padding-top: 40px;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            padding-right: 20px;
+
+            @media (min-width: 380px) {
+              padding-right: 0px;
+            }
+          }
+
+          p {
+            border-bottom: 1px solid #191919;
+            font-size: 14px;
+
+            @media (min-width: 510px) {
+              border-bottom: none;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .what-our-client-say {
+        background-color: #fff;
+
+        .section-title {
+          text-align: center;
+          padding-bottom: 0px;
+
+          @media (min-width: 960px) {
+            padding-bottom: 30px;
+          }
+        }
+
+        .btn-black {
+          margin-bottom: 120px;
+          margin-top: 20px;
+        }
+
+        .testimonials {
+          padding-right: 50px;
+          padding-left: 50px;
+          padding-bottom: 50px;
+
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+          }
+
+          .testimonial {
+            p {
+              font-size: 18px;
+            }
+            h2 {
+              color: #191919;
+              font-family: "DM Sans", sans-serif;
+              font-weight: 700;
+              font-size: 22px;
+            }
+
+            .position-company {
+              color: #f94d1c;
+            }
+
+            .review-stars {
+              padding-top: 20px;
+              padding-bottom: 20px;
+            }
+
+            .testimonial-footer {
+              display: flex;
+              gap: 20px;
+
+              h3 {
+                margin: 0px;
+                font-size: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
