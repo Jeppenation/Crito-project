@@ -4,7 +4,7 @@ import Map from '@images/Map-address.png'
 
 const ContactMap = () => {
   return (
-    <section class="contact-map">
+    <section className="contact-map">
         <img src={Map} alt="map with the location" />
      </section>
   )

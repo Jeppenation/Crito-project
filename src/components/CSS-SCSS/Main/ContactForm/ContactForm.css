@@ -12,6 +12,11 @@
   font-size: 35px;
   text-align: center;
 }
+.message-form-class .container .errorMessage {
+  text-align: center;
+  color: rgb(220, 76, 76);
+  font-size: 20px;
+}
 .message-form-class .container form .form-input {
   display: block;
   width: 100%;
