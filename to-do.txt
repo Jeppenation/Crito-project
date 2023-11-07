@@ -27,3 +27,7 @@ Att göra framöver:
     Du ska kunna skicka iväg informationen från kontaktformuläret från Contact-sidan till 
     ett webapi som du har adressen på här ovan. När du mottagit ett statusmeddelande 
     av typen 200 OK. Så ska det skrivas ut på sidan att formuläret har skickats.
+
+
+Tips från Nike:
+    Kolla ifall Home / service i Headern tar upp för mycket plats

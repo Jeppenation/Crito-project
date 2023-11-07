@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 header {
   background-color: #f0efe9;
   padding: 16px;
@@ -109,7 +110,7 @@ header .container .menu nav a.active::after, header .container .menu nav a:hover
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-header .container .menu nav .btn-login {
+header .container .menu nav .btn-login .btn-theme {
   padding-top: 12px;
   padding-bottom: 12px;
 }

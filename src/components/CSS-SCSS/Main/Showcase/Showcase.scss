@@ -1,7 +1,10 @@
 .showcase {
     background-color: #f0efe9;
+    
 
     position: relative;
+
+    padding: 0;
 
     #vector5 {
       position: absolute;
@@ -37,6 +40,9 @@
           font-family: "DM Sans", sans-serif;
           font-weight: 700;
           font-size: 40px;
+
+          margin: 0;
+          padding: 0;
 
           @media (min-width: 768px) {
             font-size: 70px;

@@ -1,31 +1,31 @@
-.showcase {
+.contact-showcase {
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
   z-index: 0;
 }
-.showcase #vector5 {
+.contact-showcase #vector5 {
   position: absolute;
   z-index: -1;
 }
-.showcase .container {
+.contact-showcase .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.showcase .container .contact-text h1 {
+.contact-showcase .container .contact-text h1 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 56px;
   text-align: center;
 }
-.showcase .container .contact-text .breadcrumbs {
+.contact-showcase .container .contact-text .breadcrumbs {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
-.showcase .container .contact-text .breadcrumbs .home {
+.contact-showcase .container .contact-text .breadcrumbs .home {
   font-weight: 300;
 }

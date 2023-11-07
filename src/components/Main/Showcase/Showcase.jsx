@@ -9,9 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Showcase = () => {
   return (
-    <section className="showcase">
+  <section className="showcase">
 
-    <img id="vector5" src={img_backgroundlines} alt="vector graphic" />
+      <img id="vector5" src={img_backgroundlines} alt="vector graphic" />
 
         <div className="container">
             <div className="content">

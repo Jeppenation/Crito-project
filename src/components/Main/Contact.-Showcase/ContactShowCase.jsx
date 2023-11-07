@@ -7,7 +7,7 @@ const ContactShowCase = () => {
   return (
 
 <>
-            <section className="showcase">
+            <section className="contact-showcase">
                 <img id="vector5" src={Vector} alt="vector graphic" />
 
                 <div className="container">
