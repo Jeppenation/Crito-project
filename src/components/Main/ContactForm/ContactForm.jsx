@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../../CSS-SCSS/Main/ContactForm/ContactForm.css'
 import { useFormik } from 'formik'
+import * as Yup from 'yup';
 
 const ContactForm = () => {
 
@@ -15,6 +16,13 @@ const ContactForm = () => {
 
         },
 
+        validationSchema: Yup.object({
+            name: Yup.string().min(2, 'Förnamnet måste bestå av minst 2 tecken'),
+            email: Yup.string()
+            .required('Epostadress måste anges')
+            .email('Epostadressen måste vara giltlig')
+        })  ,
+
         onSubmit: async (values) => {
             const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
                 method: 'post',
@@ -26,6 +34,7 @@ const ContactForm = () => {
 
             switch (result.status){
                 case 200:
+                    alert('Meddelandet gick iväg')
                     console.log('Meddelandet gick iväg')
                     break;
                 case 400:
@@ -51,11 +60,11 @@ const ContactForm = () => {
                 <!-- autocomplete = Lets the user choose to autocomplete a previous input --> */}
                 
                 <div className="mb-3 mt-4">
-                    <input className="form-input" value={form.values.name} onChange={form.handleChange} type="text" name="name" id="name" title="Name" placeholder="Name" tabIndex="1" autoComplete="name" />
+                    <input className={form.errors.name ? 'form-input-error' : 'form-input'} value={form.values.name} onChange={form.handleChange} type="text" name="name" id="name" title="Name" placeholder="Name" tabIndex="1" autoComplete="name" />
                 </div>
 
                 <div className="mb-3">
-                    <input className="form-input" value={form.values.email} onChange={form.handleChange} type="text" name="email" id="email" title="Email" placeholder="Email" tabIndex="2" autoComplete="email" />
+                    <input className={form.errors.email ? 'form-input-error' : 'form-input'} value={form.values.email} onChange={form.handleChange} type="text" name="email" id="email" title="Email" placeholder="Email" tabIndex="2" autoComplete="email" />
                 </div>
 
                 <div className="mb-5">

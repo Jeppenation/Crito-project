@@ -31,6 +31,17 @@
           outline: none;
         }
 
+        .form-input-error{
+          display: block;
+          width: 100%;
+          padding: 15px 30px;
+          color: #975f5f;
+
+          border: 1px solid #e23c3c;
+          border-radius: 25px;
+          outline: none;
+        }
+
         .textarea {
           resize: none;
           height: 160px;

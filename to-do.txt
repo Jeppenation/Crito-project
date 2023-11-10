@@ -1,15 +1,7 @@
 Skapa komponent utav: 
-    Features - 'lådorna'
-    WCU  - vänstra sidan
-    ProjectCase - Gör samtliga till komponenter
 
-    Meet our Team:
-        Komponent utav bilderna
-        Komponent utav recensionerna
-        Komponent utav stjärnorna (?)
 
     NewsArticle:
-        Hämta nyheterna via fetch?
         Gör komponent
     
 Contact:

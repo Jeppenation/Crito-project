@@ -4,12 +4,25 @@ import GirlInClassroom from '@images/girl-in-classroom.png'
 import DesktopImg from '@images/picture-desktop.png'
 import BookMobile from '@images/book-css-mobile.png'
 import Pagi from '../../Generics/Pagi/Pagi'
+import SectionTitle from '../../Generics/SectionTitle/SectionTitle'
+import Buttons from '../../Generics/Buttons/Buttons'
 
 const NewsArticles = () => {
   return (
     <section className="article-news">
     <div className="container">
         
+        
+            {/* <SectionTitle title='Article & News' header='Get Every Single Articles & News' />
+
+            <div className='Section-title'>
+            <Buttons  url='/' type= '' title='Browse Articles' />
+            </div> */}
+            
+            
+        
+        
+
         <div className="section-title">
             <p>Article & News</p>
             <h2>Get Every Single Articles & News</h2>
@@ -21,7 +34,7 @@ const NewsArticles = () => {
             <article className="news">
                 <img src={GirlInClassroom} alt="girl-in-classNameroom" />
                 <p className="news-title"> Business</p>
-                <h3>How To Use Digitalization In The classNameroom</h3>
+                <h3>How To Use Digitalization In The classroom</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed hic libero.</p>
                 <div className="date-box">
                     <h3>25</h3>
