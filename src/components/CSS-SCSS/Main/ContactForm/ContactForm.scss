@@ -4,6 +4,7 @@
 
     .container {
       background-color: #f0efe9;
+      // background-color: rgb(219, 245, 219);
       padding: 60px 30px;
 
       h2 {
@@ -20,6 +21,9 @@
       }
 
       form {
+        display: flex;
+        flex-direction: column;
+        
         .form-input {
           display: block;
           width: 100%;
@@ -54,6 +58,23 @@
 
         .btn-theme {
           text-align: center;
+        }
+
+        .isSent{
+          align-self: center;
+          margin-top: 50px;
+          
+          font-size: 25px;
+          font-family: "Dm Sans", sans-serif;
+          font-weight: 700;
+
+          color: rgb(119, 174, 119);
+          
+          padding: 20px;
+
+          i {
+            margin-left: 10px;
+          }
         }
       }
     }

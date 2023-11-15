@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import '../../CSS-SCSS/Main/ContactForm/ContactForm.css'
 import { useFormik } from 'formik'
 import * as Yup from 'yup';
@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 const ContactForm = () => {
 
     const [errorMessage, setErrorMessage] = useState('');
+    const [isSent, setIsSent] = useState(false);
 
     const form = useFormik({
         initialValues: {
@@ -34,7 +35,11 @@ const ContactForm = () => {
 
             switch (result.status){
                 case 200:
-                    alert('Meddelandet gick iväg')
+                    setIsSent(true);
+                    form.resetForm();
+                    setTimeout(() => {
+                        setIsSent(false);
+                    }, 2000)
                     console.log('Meddelandet gick iväg')
                     break;
                 case 400:
@@ -45,7 +50,7 @@ const ContactForm = () => {
             }
         }
 
-    })
+    });
 
 
   return (
@@ -73,6 +78,17 @@ const ContactForm = () => {
 
                 <div className="d-grid">
                     <button className="btn-theme" type="submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
+                </div>
+
+                <div className="isSent">
+                    {
+                        isSent &&
+                        <>
+                            <span>Message is sent!</span>
+                            <i className="fa-light fa-thumbs-up" />
+                        </>
+            
+                    }
                 </div>
 
             </form>

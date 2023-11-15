@@ -17,6 +17,10 @@
   color: rgb(220, 76, 76);
   font-size: 20px;
 }
+.message-form-class .container form {
+  display: flex;
+  flex-direction: column;
+}
 .message-form-class .container form .form-input {
   display: block;
   width: 100%;
@@ -45,4 +49,16 @@
 }
 .message-form-class .container form .btn-theme {
   text-align: center;
+}
+.message-form-class .container form .isSent {
+  align-self: center;
+  margin-top: 50px;
+  font-size: 25px;
+  font-family: "Dm Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(119, 174, 119);
+  padding: 20px;
+}
+.message-form-class .container form .isSent i {
+  margin-left: 10px;
 }
