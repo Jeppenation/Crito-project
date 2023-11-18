@@ -1,17 +1,3 @@
-Skapa komponent utav: 
-
-
-    NewsArticle:
-        Gör komponent
-    
-Contact:
-    ContactOptions:
-        Skapa komponent utav de tre boxarna
- 
-
-
-Att göra framöver: 
-    Formuläret på Contact-sidan ska valideras med enklare former av validering, såsom att 
-    ett fält måste innehålla ett värde etc.
+KLART
     
    
