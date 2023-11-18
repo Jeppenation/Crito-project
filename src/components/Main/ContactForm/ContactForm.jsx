@@ -87,7 +87,11 @@ const ContactForm = () => {
                             <span>Message is sent!</span>
                             <i className="fa-light fa-thumbs-up" />
                         </>
-            
+                    }
+
+                    {
+                        !isSent &&
+                        <span></span>
                     }
                 </div>
 
